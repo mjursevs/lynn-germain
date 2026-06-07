@@ -301,7 +301,7 @@ img { display: block; max-width: 100%; }
   display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 6vw, 5.5rem); align-items: start;
 }
 .contact__head .section-title { color: var(--cream); }
-.contact__note { color: var(--cream); margin: 1.4rem 0 2.2rem; max-width: 40ch; }
+.contact__head .contact__note { color: var(--cream); margin: 1.4rem 0 2.2rem; max-width: 40ch; }
 .contact .btn--copper { margin-top: 0.5rem; }
 
 .contact__form { background: rgba(250,245,234,0.07); border: 1px solid rgba(250,245,234,0.18); border-radius: 10px; padding: clamp(1.5rem, 3vw, 2.4rem); backdrop-filter: blur(6px); }
