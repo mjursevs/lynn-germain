@@ -128,8 +128,7 @@
   });
 
   /* ---------- inquiry form -> mailto ---------- */
-  // NOTE: replace lynn@example.com with Lynn's real address (also in index.html).
-  var LYNN_EMAIL = "lynn@example.com";
+  var LYNN_EMAIL = "lynn.germain@gmail.com";
   var form = document.getElementById("inquiryForm");
   var hint = document.getElementById("formHint");
   if (form) {

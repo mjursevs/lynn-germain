@@ -10,11 +10,10 @@ python3 -m http.server 8753
 # open http://localhost:8753
 ```
 
-## Before going live — 2 quick edits
-1. **Email.** Replace `lynn@example.com` with Lynn's real address. It appears in:
-   - `index.html` (nav-free, used in contact button + footer + mailto link) — find/replace
-   - `script.js` (the `LYNN_EMAIL` constant near the bottom)
-2. **Placeholder copy.** Sections marked `<!-- PLACEHOLDER COPY -->` in `index.html`
+## Before going live — remaining edit
+- **Email** is set to `lynn.germain@gmail.com` (contact button + footer in `index.html`,
+  `LYNN_EMAIL` constant in `script.js`). Change there if it ever moves.
+- **Placeholder copy.** Sections marked `<!-- PLACEHOLDER COPY -->` in `index.html`
    (hero lede, the creed quote, the "Meet Lynn" bio). Swap in Lynn's real words.
    No invented facts were used — it's elegant-but-generic on purpose.
 
