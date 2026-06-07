@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lynn Germain — Handmade Beaded Jewelry</title>
+<meta name="description" content="One-of-a-kind beaded jewelry, made by hand. Necklaces, earrings, and bracelets by Lynn Germain." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f1e9da'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%230e564f'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23b0673a' stroke-width='2'/%3E%3C/svg%3E" />
+
+<!-- ============================================================= -->
+<!--  EMAIL PLACEHOLDER: lynn@example.com appears in 3 spots       -->
+<!--  (nav, contact button, footer) + script.js form handler.     -->
+<!--  Find-and-replace lynn@example.com with Lynn's real address.  -->
+<!-- ============================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- grain / atmosphere overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="wordmark">
+      <span class="wordmark__name">Lynn Germain</span>
+      <span class="wordmark__sub">Beadwork</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav__cta">Inquire</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="navMobile">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="kicker reveal" data-d="0">Handmade beadwork · One of a kind</p>
+        <h1 class="hero__title">
+          <span class="reveal" data-d="1">Made by hand,</span>
+          <span class="reveal" data-d="2">a <em>bead</em> at</span>
+          <span class="reveal" data-d="3">a time.</span>
+        </h1>
+        <p class="hero__lede reveal" data-d="4">
+          <!-- PLACEHOLDER COPY — edit freely -->
+          Necklaces, earrings, and bracelets woven one bead at a time.
+          No two alike. Each piece is its own small, finished thing.
+        </p>
+        <div class="hero__actions reveal" data-d="5">
+          <a href="#work" class="btn btn--solid">View the work</a>
+          <a href="#contact" class="btn btn--ghost">Inquire about a piece</a>
+        </div>
+        <div class="beaded reveal" data-d="6" aria-hidden="true">
+          <span></span><span></span><span class="c"></span><span></span><span></span><span></span><span class="c"></span><span></span>
+        </div>
+      </div>
+      <div class="hero__media reveal" data-d="3">
+        <figure class="hero__figure">
+          <picture>
+            <source srcset="images/hero.webp" type="image/webp" />
+            <img src="images/hero.jpg" alt="A table of Lynn Germain's beaded jewelry with fresh flowers and a display stand of earrings." width="2000" height="1333" />
+          </picture>
+          <figcaption>From the studio table</figcaption>
+        </figure>
+        <span class="hero__tag">Est. by hand</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PHILOSOPHY ===================== -->
+  <section class="creed">
+    <div class="creed__inner reveal">
+      <p class="creed__mark" aria-hidden="true">&#10047;</p>
+      <blockquote class="creed__quote">
+        <!-- PLACEHOLDER COPY — edit freely -->
+        “Every strand is counted, threaded, and knotted by hand.
+        It takes as long as it takes &mdash; and that is the
+        whole point of it.”
+      </blockquote>
+      <p class="creed__by">&mdash; Lynn</p>
+    </div>
+  </section>
+
+  <!-- ===================== WORK / GALLERY ===================== -->
+  <section class="work" id="work">
+    <div class="section-head reveal">
+      <p class="kicker">Selected pieces</p>
+      <h2 class="section-title">The Work</h2>
+      <p class="section-note">
+        A rotating selection. Most pieces are one of a kind &mdash;
+        if something catches your eye, it is likely the only one.
+      </p>
+    </div>
+
+    <div class="filters reveal" id="filters" role="group" aria-label="Filter pieces">
+      <button class="filter is-active" data-filter="all">All</button>
+      <button class="filter" data-filter="Necklace">Necklaces</button>
+      <button class="filter" data-filter="Earrings">Earrings</button>
+      <button class="filter" data-filter="Bracelet">Bracelets</button>
+      <button class="filter" data-filter="Detail">Details</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <!-- tiles: data-cat drives filter, data-full drives lightbox -->
+      <figure class="tile reveal" data-cat="Necklace" data-full="images/gallery/necklace-onyx-teal-full.webp">
+        <img loading="lazy" src="images/gallery/necklace-onyx-teal.webp" alt="Onyx and teal beaded statement necklace" />
+        <figcaption><span class="tile__title">Onyx &amp; Teal Statement</span><span class="tile__cat">Necklace</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Detail" data-full="images/gallery/detail-chevron-full.webp">
+        <img loading="lazy" src="images/gallery/detail-chevron.webp" alt="Close detail of chevron beadwork weave" />
+        <figcaption><span class="tile__title">Chevron Weave, Close</span><span class="tile__cat">Detail</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Earrings" data-full="images/gallery/earrings-teal-tassel-full.webp">
+        <img loading="lazy" src="images/gallery/earrings-teal-tassel.webp" alt="Teal beaded tassel earrings" />
+        <figcaption><span class="tile__title">Teal Tassel Earrings</span><span class="tile__cat">Earrings</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Necklace" data-full="images/gallery/strand-teal-copper-full.webp">
+        <img loading="lazy" src="images/gallery/strand-teal-copper.webp" alt="Teal and copper beaded strand necklace" />
+        <figcaption><span class="tile__title">Teal &amp; Copper Strand</span><span class="tile__cat">Necklace</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Collection" data-full="images/gallery/display-stand-full.webp">
+        <img loading="lazy" src="images/gallery/display-stand.webp" alt="A display stand of beaded earrings and necklaces" />
+        <figcaption><span class="tile__title">The Collection</span><span class="tile__cat">Collection</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Earrings" data-full="images/gallery/earrings-silver-full.webp">
+        <img loading="lazy" src="images/gallery/earrings-silver.webp" alt="Silver fringe beaded earrings" />
+        <figcaption><span class="tile__title">Silver Fringe Earrings</span><span class="tile__cat">Earrings</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Necklace" data-full="images/gallery/necklace-copper-full.webp">
+        <img loading="lazy" src="images/gallery/necklace-copper.webp" alt="Copper and amber beaded necklace" />
+        <figcaption><span class="tile__title">Copper &amp; Amber Necklace</span><span class="tile__cat">Necklace</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Earrings" data-full="images/gallery/earrings-array-full.webp">
+        <img loading="lazy" src="images/gallery/earrings-array.webp" alt="An assortment of beaded earrings" />
+        <figcaption><span class="tile__title">Earrings, an Assortment</span><span class="tile__cat">Earrings</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Detail" data-full="images/gallery/detail-earrings-full.webp">
+        <img loading="lazy" src="images/gallery/detail-earrings.webp" alt="Close detail of fringe and drop earrings" />
+        <figcaption><span class="tile__title">Fringe &amp; Drop, Close</span><span class="tile__cat">Detail</span></figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="Bracelet" data-full="images/gallery/detail-bracelets-full.webp">
+        <img loading="lazy" src="images/gallery/detail-bracelets.webp" alt="Beaded bracelets arranged on marble" />
+        <figcaption><span class="tile__title">Bracelets on Marble</span><span class="tile__cat">Bracelet</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__media reveal">
+        <img class="about__portrait" src="images/headshot.webp" alt="Portrait of Lynn Germain" width="360" height="360" />
+        <figure class="about__context">
+          <img loading="lazy" src="images/atelier.webp" alt="Lynn's beaded jewelry laid out on a table with flowers" />
+        </figure>
+      </div>
+      <div class="about__copy reveal">
+        <p class="kicker">About</p>
+        <h2 class="section-title">Meet Lynn</h2>
+        <!-- PLACEHOLDER COPY — replace with Lynn's real story -->
+        <p>
+          Lynn Germain makes beaded jewelry by hand, one piece at a time.
+          What began as a quiet pastime has become a small collection of
+          necklaces, earrings, and bracelets &mdash; each one threaded,
+          counted, and finished at her own table.
+        </p>
+        <p>
+          She works in seed beads and stones, favouring deep teals, warm
+          coppers, and corals. Because every piece is made by hand, no two
+          are quite the same. If you find one you love, it is almost
+          certainly the only one of its kind.
+        </p>
+        <p class="about__sign">&mdash; Lynn Germain</p>
+        <a href="#contact" class="btn btn--solid">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__head reveal">
+        <p class="kicker kicker--light">Inquiries</p>
+        <h2 class="section-title">Found a piece you love?</h2>
+        <p class="contact__note">
+          Send a note with the piece that caught your eye and I&rsquo;ll
+          reply with details and availability. Custom requests welcome.
+        </p>
+        <a class="btn btn--copper" href="mailto:lynn@example.com?subject=Inquiry%20about%20a%20piece">
+          lynn@example.com
+        </a>
+      </div>
+
+      <form class="contact__form reveal" id="inquiryForm" novalidate>
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="f-piece">Piece of interest <span>(optional)</span></label>
+          <input id="f-piece" name="piece" type="text" placeholder="e.g. Onyx &amp; Teal Statement" />
+        </div>
+        <div class="field">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--solid btn--full">Send inquiry</button>
+        <p class="form-hint" id="formHint">This opens your email app, addressed to Lynn.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="#top" class="wordmark wordmark--footer">
+      <span class="wordmark__name">Lynn Germain</span>
+      <span class="wordmark__sub">Handmade beadwork · One of a kind</span>
+    </a>
+    <div class="footer__right">
+      <a href="mailto:lynn@example.com">lynn@example.com</a>
+      <div class="beaded beaded--sm" aria-hidden="true">
+        <span></span><span class="c"></span><span></span><span></span><span class="c"></span><span></span>
+      </div>
+      <p class="footer__fine">&copy; <span id="year">2026</span> Lynn Germain. Each piece made by hand.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb__close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb__nav lb__prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <figure class="lb__stage">
+    <img id="lbImg" src="" alt="" />
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb__nav lb__next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
